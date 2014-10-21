@@ -61,8 +61,8 @@ public class RandomizedQueue<Item> implements Iterable<Item> {
             throw new NoSuchElementException("Underflow");
         }
         int n = StdRandom.uniform(N);
-        while(q[n] == null) {
-        	n = StdRandom.uniform(N);
+        while (q[n] == null) {
+            n = StdRandom.uniform(N);
         }
         return q[n];
        }
